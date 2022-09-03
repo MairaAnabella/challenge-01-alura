@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div>
+
+        <section class="left">
+            <img src="/img/Vector.png" alt="logo" class="logo-img">
+            <input type="text" class="text-input" placeholder="ingrese el texto aqui" id="text-area">
+            <div class="left-button">
+                <p> <img src="/img/!.png" alt=""> Solo minusculas y sin acentos</p>
+                <button type="button" id="btn-encrip" onclick="encriptar()">ENCRIPTAR</button>
+                <button type="button" id="btn-desencrip" onclick="desencriptar()">DESENCRIPTAR</button>
+            </div>
+        </section>
+        <section class="rigth">
+            <img src="/img/logo.png" alt="muñeco" id="img-derecha">
+            <h1 class="mensaje" id="mensaje">NINGUN MENSAJE <br> FUE ENCONTRADO</h1>
+            <textarea class="text-area" id="textArea" rows="8"
+                cols="80">Ingrese texto que desees encriptar o desencriptar.</textarea>
+            <button type="button" class="copy" data-clipboard-target="#textArea" data-clipboard-action="copy"> COPIAR!</button>
+        </section >
+
+      
+    </div>
+
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/Portapapeles.js"></script>
+</body>
+
+</html>
